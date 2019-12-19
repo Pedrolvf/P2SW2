@@ -1,0 +1,213 @@
+/* PEDRO LUIZ VEDANA FERRAZ PROVA 2 DE SW2 RA:2160692 SEGUNDO PERÍODO */ 
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+    background-color: black;
+    
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(img_header1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+    
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}
+#life{
+    font-family: 'Open Sans', sans-serif;
+    width: 94%;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    text-align: justify;
+    padding-left: 100px;
+
+}
+.content {
+    font-family: 'Open Sans', sans-serif;
+    width: 94%;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    text-align: justify;
+    padding-left: 100px;
+}
+ p {
+     text-align: justify;
+ }
+
+.title {
+    
+    font-weight: bold;
+    color:pink;
+    font-size:20px;
+    padding-left: 50px;
+    margin-top:20px;
+    text-align: left;  
+}
+#work{
+    margin-bottom:120px;
+}
+
+#title5{
+  
+    background-color: pink;
+    margin-left: -250px;
+    margin-right: -192px;
+    
+    margin-top: 30px;
+    padding-top: 5px;
+}
+
+#insta {
+    background-image: url(instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 1650px;
+    color:black;
+}
+
+
+
+#btnTop {
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    height: 60px;
+    width: 60px;
+    color: #000;
+    background:pink;
+    border-color: black;
+    border-radius: 50vh;
+    display: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.progress-bar {
+	position: absolute;
+	width: 900px;
+	height: 3em;
+	background-color: #111;
+	border-radius: 1.5em;
+	color: black;
+}
+
+.progress-bar::before {
+	content: attr(data-label);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: .5em;
+	top: .5em;
+	bottom: .5em;
+	width: calc(var(--width, 0) * 1%);
+	min-width: 2rem;
+	max-width: calc(100% - 1em);
+	background-color:pink;
+	border-radius: 1em;
+	padding: 1em;
+}
